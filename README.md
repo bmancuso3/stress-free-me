@@ -9,3 +9,7 @@ Group 1 Project 2 - UTA Full Stack Web Dev Bootcamp
 - Kai Gurung-Doll
 - Matthew Casey
 - Diego Cornejo
+
+## Installations
+
+- Chart.JS v.4.4.0: https://www.chartjs.org/docs/latest/getting-started/installation.html
