@@ -12,19 +12,26 @@ Survey.init(
       autoIncrement: true,
     },
     sleep_quality: {
-      type: DataTypes.ENUM('1', '2', '3', '4', '5'),
+      type: DataTypes.ENUM(1,2,3,4,5),
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    headaches: {
+      type: DataTypes.ENUM(1,2,3,4,5),
     },
-    date_created: {
-      type: DataTypes.DATE,
+    performance: {
+      type: DataTypes.ENUM(1,2,3,4,5),
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
+    workload: {
+      type: DataTypes.ENUM(1,2,3,4,5),
+      allowNull: false,
+    },
+    hobbies: {
+      type: DataTypes.ENUM(1,2,3,4,5),
+      allowNull: false,
+    },
+    stress: {
+      type: DataTypes.ENUM(1,2,3,4,5),
       allowNull: false,
     },
     user_id: {
@@ -40,8 +47,9 @@ Survey.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'survey',
   }
 );
 
 module.exports = Survey;
+//The user can only choose from 1 to 5 on their survey
