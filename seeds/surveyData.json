@@ -1,0 +1,26 @@
+[
+  {
+    "sleep_quality": 1,
+    "headaches": 5,
+    "performance": 3,
+    "workload":3,
+    "hobbies": 2,
+    "stress":5
+  },
+  {
+    "sleep_quality": 1,
+    "headaches": 3,
+    "performance": 3,
+    "workload":3,
+    "hobbies": 3,
+    "stress":2
+  },
+  {
+    "sleep_quality": 1,
+    "headaches": 2,
+    "performance": 3,
+    "workload":3,
+    "hobbies": 2,
+    "stress":3
+  }
+]
