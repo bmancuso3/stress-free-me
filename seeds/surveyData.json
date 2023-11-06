@@ -6,7 +6,9 @@
     "performance": 3,
     "workload":3,
     "hobbies": 2,
-    "stress":5
+    "stress":5,
+    "therapy":3,
+    "outside":2
   },
   {
     "sleep_quality": 1,
@@ -14,7 +16,9 @@
     "performance": 3,
     "workload":3,
     "hobbies": 3,
-    "stress":2
+    "stress":2,
+    "therapy":3,
+    "outside":2
   },
   {
     "sleep_quality": 1,
@@ -22,6 +26,8 @@
     "performance": 3,
     "workload":3,
     "hobbies": 2,
-    "stress":3
+    "stress":3,
+    "therapy":3,
+    "outside":2
   }
 ]

@@ -34,6 +34,14 @@ Survey.init(
       type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
+    therapy: {
+      type: DataTypes.ENUM('1','2','3','4','5'),
+      allowNull: false,
+    },
+    outside: {
+      type: DataTypes.ENUM('1','2','3','4','5'),
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
