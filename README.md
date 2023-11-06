@@ -22,3 +22,9 @@ Group 1 Project 2 - UTA Full Stack Web Dev Bootcamp
 ## LICENSE
 
 Refer to License
+
+## References
+
+- https://mdbootstrap.com/docs/standard/components/cards/
+- https://mdbootstrap.com/docs/standard/components/cards/
+- For question source: https://www.kaggle.com/datasets/samyakb/student-stress-factors
