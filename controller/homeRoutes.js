@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { AAAA, BBBB } = require("../models");
+const auth = require('../utils/auth');
 
 //GET Route to get information from homepage.handlebars
 router.get("/", async (req, res) => {
@@ -28,6 +29,24 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/CCCC', auth, async (req, res) => {
+    try{
+        const userData =await User.findByPk(req.session.user_id, {
+            attributes: { exclude: ['password']},
+            include: [{ model: Survey }],
+        });
+
+        const user = userData.get({ plain: true });
+        res.render('/CCCC', {
+            ...user,
+            logged_in: true
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
