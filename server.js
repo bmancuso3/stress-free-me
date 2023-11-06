@@ -4,7 +4,7 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const hbs = exphbs.create({});
 const sequelize = require("./config/connection");
-const sequelizeStore = require("connect-session-sequelize")(session.Store);
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 //Setting up Express.JS
 const app = express();
