@@ -19,6 +19,16 @@ const seedDatabase = async () => {
     });
   }
 
+  // for (let i = 0; i < surveyData.length; i++) {
+  //   const survey = surveyData[i];
+  //   const userId = users[i % users.length].id;
+
+  //   await Survey.create({
+  //     ...survey,
+  //     user_id: userId,
+  //   });
+  // } LEAVING this code here as this equals id=user. Still getting random numbers so need to fix it! 
+  
   process.exit(0);
 };
 
