@@ -26,4 +26,19 @@ const signupForm = async (event) => {
   event.preventDefault();
   const emailNew = document.querySelector("emailNew").value.trim();
   const passwordNew = document.querySelector("passwordNew").value.trim();
+
+  if (emailNew && passwordNew === true) {
+    const response = await fetch("api/users", {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+      alert("Created login successful!");
+      document.location.replace("/homepage");
+    } else {
+      alert("Invalid login, please input needed criteria for craeting login!");
+    }
+  }
 };

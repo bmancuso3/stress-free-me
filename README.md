@@ -25,6 +25,7 @@ Refer to License
 
 ## References
 
+- UT Austin Bootcamp Curriculum: Module 14 (MVC)
 - https://mdbootstrap.com/docs/standard/components/cards/
 - https://mdbootstrap.com/docs/standard/components/cards/
 - For question source: https://www.kaggle.com/datasets/samyakb/student-stress-factors
