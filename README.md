@@ -28,3 +28,4 @@ Refer to License
 - https://mdbootstrap.com/docs/standard/components/cards/
 - https://mdbootstrap.com/docs/standard/components/cards/
 - For question source: https://www.kaggle.com/datasets/samyakb/student-stress-factors
+- https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault

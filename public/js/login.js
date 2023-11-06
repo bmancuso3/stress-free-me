@@ -13,10 +13,17 @@ const loginForm = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
+    //this will redirect to questions.handlebars if above is successful. If not, alert will pop up.
     if (response.ok) {
       document.location.replace("/questions");
     } else {
       alert("Invalid Login, please input the correct credentials!");
     }
   }
+};
+
+const signupForm = async (event) => {
+  event.preventDefault();
+  const emailNew = document.querySelector("emailNew").value.trim();
+  const passwordNew = document.querySelector("passwordNew").value.trim();
 };
