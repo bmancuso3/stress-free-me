@@ -5,7 +5,7 @@ const auth = require('../utils/auth');
 //GET Route to get information from homepage.handlebars
 router.get("/", async (req, res) => {
   // Renders all Handlebars.js template.
-  res.render("all");
+  res.render("homepage");
 });
 
 router.get("/", async (req, res) => {
