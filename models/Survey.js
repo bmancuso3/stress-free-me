@@ -12,26 +12,26 @@ Survey.init(
       autoIncrement: true,
     },
     sleep_quality: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
     headaches: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
     },
     performance: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
     workload: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
     hobbies: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
     stress: {
-      type: DataTypes.ENUM(1,2,3,4,5),
+      type: DataTypes.ENUM('1','2','3','4','5'),
       allowNull: false,
     },
     user_id: {
