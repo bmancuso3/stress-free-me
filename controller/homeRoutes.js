@@ -1,28 +1,28 @@
 const router = require("express").Router();
-const { AAAA, BBBB } = require("../models");
+const { Survey, User } = require("../models");
 const auth = require('../utils/auth');
 
 //GET Route to get information from homepage.handlebars
 router.get("/", async (req, res) => {
   // Renders all Handlebars.js template.
-  res.render("all");
+  res.render("homepage");
 });
 
 router.get("/", async (req, res) => {
   try {
-    const stressData = await AAAA.findAll({
+    const stressData = await Survey.findAll({
       include: [
         {
-          model: BBBB,
+          model: User,
           attributes: ["name"],
         },
       ],
     });
 
-    const stress = stressData.get({ plain: true });
+    const stress = stressData.map((Survey) => Survey.get({ plain: true }));
 
-    res.render("stress", {
-      ...stress,
+    res.render('survey', {
+      stress,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -30,7 +30,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get('/CCCC', auth, async (req, res) => {
+router.get('/profile/:id', auth, async (req, res) => {
     try{
         const userData =await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password']},
@@ -38,7 +38,7 @@ router.get('/CCCC', auth, async (req, res) => {
         });
 
         const user = userData.get({ plain: true });
-        res.render('/CCCC', {
+        res.render('profile', {
             ...user,
             logged_in: true
         });
@@ -47,10 +47,10 @@ router.get('/CCCC', auth, async (req, res) => {
     }
 });
 
-
+// if user is already logged in, redirect to new route
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/stressQuestions");
+    res.redirect("/profile");
     return;
   }
 
