@@ -57,4 +57,9 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/api/results", async (req, res) => {
+  // Renders all Handlebars.js template.
+  res.render("results");
+});
+
 module.exports = router;
