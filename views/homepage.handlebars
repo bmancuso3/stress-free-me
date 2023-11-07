@@ -5,42 +5,45 @@
     id="logoImage"
   />
 
-  
 </div>
 <div class="m-5 pb-1 text-center fs-1 font-weight-bold text-light">Welcome to
   Stress-Free-Me!</div>
 
 <div class="container">
-  <div class="container p-3 d-flex justify-content-center">
-    <div class="card shadow" style="width: 50rem">
-      <form class="card-body col login-form text-center">
-        <div class="mb-3">
-          <h2>Login</h2>
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <div class="col-sm">
+  <div class="row">
+    <div class="col-lg-6 mb-4 container p-3 d-flex justify-content-center">
+      <div class="card shadow" style="width: 50rem">
+        <form class="card-body col login-form text-center">
+          <div class="mb-3">
+            <h2>Login</h2>
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <div class="col-sm">
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label"
+            >Password</label>
             <input
-              type="email"
+              type="password"
               class="form-control"
-              id="emailInput"
-              aria-describedby="emailHelp"
-              placeholder="Email"
+              id="passwordInput"
+              placeholder="Password"
             />
           </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="passwordInput"
-            placeholder="Password"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
-  </div>
-  {{!-- <div class="container p-3 d-flex justify-content-center">
+    {{! <div class="container p-3 d-flex justify-content-center">
     <div class="card shadow" style="width: 50rem">
       <form class="card-body col signup-form text-center">
         <div class="mb-3">
@@ -67,45 +70,48 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
-  </div>
-</div> --}}
+  </div> }}
 
-<div class="container p-3 d-flex justify-content-center">
-  <div
-    class="card shadow"
-    style="width: 50rem"
-  >
-    <form class="card-body col signup-form text-center">
-      <div class="mb-3">
-        <h2>Signup</h2>
+    <div class="col-lg-6 mb-4 container p-3 d-flex justify-content-center">
+      <div class="card shadow" style="width: 50rem">
+        <form class="card-body col signup-form text-center">
+          <div class="mb-3">
+            <h2>Signup</h2>
 
-        <label for="usernameInput" class="form-label">Username</label>
-          <input
-          type="text"
-          class="form-control"
-          id="name"
-          aria-describedby="emailHelp"
-          placeholder="Username"
+            <label for="usernameInput" class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+              placeholder="Username"
+            />
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailNew"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
 
-        />
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="emailNew"
-          aria-describedby="emailHelp"
-          placeholder="Email"
-
-        />
-
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordNew"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="passwordNew" placeholder="Password"
-/>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
   </div>
 </div>
 
