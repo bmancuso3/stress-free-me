@@ -38,7 +38,7 @@
       </form>
     </div>
   </div>
-  <div class="container p-3 d-flex justify-content-center">
+  {{!-- <div class="container p-3 d-flex justify-content-center">
     <div class="card shadow" style="width: 50rem">
       <form class="card-body col signup-form text-center">
         <div class="mb-3">
@@ -66,6 +66,33 @@
       </form>
     </div>
   </div>
+</div> --}}
+
+<div class="container p-3 d-flex justify-content-center">
+  <div
+    class="card row row-cols-2 row-cols-lg-5 g-2 g-lg-3"
+    style="width: 50rem"
+  >
+    <form class="card-body col signup-form">
+      <div class="mb-3">
+        <h2>Signup</h2>
+        <label for="exampleInputEmail1" class="form-label">New Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailNew"
+          aria-describedby="emailHelp"
+        />
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passwordNew" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </div>
-<script src="/js/login.js"></script>
-<script src="/js/logout.js"></script>
+
+<script src="./js/login.js"></script>
+<script src="./js/logout.js"></script>
