@@ -21,7 +21,7 @@ import Chart from 'chart.js/auto'
         labels: data.map(row => row.date),
         datasets: [
           {
-            label: 'Stress Journey Score',
+            label: 'Stress Journey Progress',
             data: data.map(row => row.count)
           }
         ]
