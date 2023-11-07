@@ -15,7 +15,7 @@ const loginForm = async (event) => {
     });
     //this will redirect to questions.handlebars if above is successful. If not, alert will pop up.
     if (response.ok) {
-      document.location.replace("/surveys");
+      document.location.replace("/api/surveys");
     } else {
       alert("Invalid Login, please input the correct credentials!");
     }

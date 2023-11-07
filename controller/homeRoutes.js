@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   res.render("homepage");
 });
 
-router.get("/survey", async (req, res) => {
+router.get("/api/surveys", async (req, res) => {
   try {
     const stressData = await Survey.findAll({
       include: [
