@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   res.render("homepage");
 });
 
-router.get("/", async (req, res) => {
+router.get("/api/surveys", async (req, res) => {
   try {
     const stressData = await Survey.findAll({
       include: [
@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 
     const stress = stressData.map((Survey) => Survey.get({ plain: true }));
 
-    res.render('survey', {
+    res.render('questions', {
       stress,
       logged_in: req.session.logged_in,
     });

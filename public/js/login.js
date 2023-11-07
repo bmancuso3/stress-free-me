@@ -4,10 +4,10 @@ const loginForm = async (event) => {
   //Grabbing the values from our homepage.handlebars
   const email = document.querySelector("#emailInput").value.trim();
   const password = document.querySelector("#passwordInput").value.trim();
-
+  console.log(email,password)
   //If email and password match then we make an update using a POST HTTP request, that speaks directly to the userRoutes.js to fetch the POST route for 'login'.
   // API folder to index.js '/users', and then to 'login' post in userRoutes.js
-  if (email && password === true) {
+  if (email && password ) {
     const response = await fetch("api/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
@@ -15,7 +15,7 @@ const loginForm = async (event) => {
     });
     //this will redirect to questions.handlebars if above is successful. If not, alert will pop up.
     if (response.ok) {
-      document.location.replace("/questions");
+      document.location.replace("/api/surveys");
     } else {
       alert("Invalid Login, please input the correct credentials!");
     }
@@ -27,7 +27,7 @@ const signupForm = async (event) => {
   const emailNew = document.querySelector("#emailNew").value.trim();
   const passwordNew = document.querySelector("#passwordNew").value.trim();
 
-  if (emailNew && passwordNew === true) {
+  if (emailNew && passwordNew) {
     const response = await fetch("api/users", {
       method: "POST",
       body: JSON.stringify({ email, password }),
@@ -36,7 +36,7 @@ const signupForm = async (event) => {
 
     if (response.ok) {
       alert("Created login successful!");
-      document.location.replace("/questions"); //needs to go to profile
+      document.location.replace("/surveys"); //needs to go to profile
     } else {
       alert("Invalid login, please input needed criteria for creating login!");
     }
