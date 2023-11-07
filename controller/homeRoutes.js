@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   res.render("homepage");
 });
 
-router.get("/survey", async (req, res) => {
+router.get("/api/surveys", async (req, res) => {
   try {
     const stressData = await Survey.findAll({
       include: [
@@ -55,6 +55,11 @@ router.get("/login", (req, res) => {
   }
 
   res.render("login");
+});
+
+router.get("/api/results", async (req, res) => {
+  // Renders all Handlebars.js template.
+  res.render("results");
 });
 
 module.exports = router;

@@ -15,7 +15,7 @@ const loginForm = async (event) => {
     });
     //this will redirect to questions.handlebars if above is successful. If not, alert will pop up.
     if (response.ok) {
-      document.location.replace("/surveys");
+      document.location.replace("/api/surveys");
     } else {
       alert("Invalid Login, please input the correct credentials!");
     }
@@ -30,7 +30,7 @@ const signupForm = async (event) => {
   if (emailNew && passwordNew) {
     const response = await fetch("api/users", {
       method: "POST",
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ emailNew, passwordNew }),
       headers: { "Content-Type": "application/json" },
     });
 
