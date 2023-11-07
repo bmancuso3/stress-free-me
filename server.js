@@ -4,6 +4,7 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const hbs = exphbs.create({});
 const routes = require('./controller');
+
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
@@ -11,11 +12,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-//Middleware that allows Handlebars.JS engine to be used as template engine.
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
-app.use(express.static(path.join(__dirname, "public")));
-app.use(require("./controller/homeRoutes"));
+//app.use(require("./controller/homeRoutes"));
 
 // app.listen(PORT, () => {
 //   console.log("We are now listening to http://localhost:" + PORT);
@@ -24,7 +21,7 @@ app.use(require("./controller/homeRoutes"));
 const sess = {
   secret: 'user session',
   cookie: {
-    maxAge: 300000,
+    maxAge: 720000,
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
@@ -37,8 +34,14 @@ const sess = {
 };
 
 app.use(session(sess));
+
+//Middleware that allows Handlebars.JS engine to be used as template engine.
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
