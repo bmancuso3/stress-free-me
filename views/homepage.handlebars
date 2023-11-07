@@ -14,7 +14,7 @@
       <form class="card-body col login-form text-center">
         <div class="mb-3">
           <h2>Login</h2>
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <label for="exampleInputEmail1" class="form-label">Email</label>
           <div class="col-sm">
             <input
               type="email"
@@ -70,13 +70,23 @@
 
 <div class="container p-3 d-flex justify-content-center">
   <div
-    class="card"
+    class="card shadow"
     style="width: 50rem"
   >
-    <form class="card-body col signup-form">
+    <form class="card-body col signup-form text-center">
       <div class="mb-3">
         <h2>Signup</h2>
-        <label for="exampleInputEmail1" class="form-label">New Email</label>
+
+        <label for="usernameInput" class="form-label">Username</label>
+          <input
+          type="text"
+          class="form-control"
+          id="name"
+          aria-describedby="emailHelp"
+          placeholder="Username"
+
+        />
+        <label for="exampleInputEmail1" class="form-label">Email</label>
         <input
           type="email"
           class="form-control"
