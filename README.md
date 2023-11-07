@@ -66,6 +66,11 @@ Criteria Here
 - For question source: https://www.kaggle.com/datasets/samyakb/student-stress-factors
 - https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 - Logo Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fstress_5361723&psig=AOvVaw1vq4JICD4NNPyPqKmijOOP&ust=1699462380260000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOi45-2ssoIDFQAAAAAdAAAAABAE
+- https://getbootstrap.com/docs/5.0/utilities/colors/
+- https://getbootstrap.com/docs/5.0/utilities/borders/
+- https://www.w3schools.com/css/css_background.asp
+- https://bootcamp.uxdesign.cc/use-css-gradients-for-background-gradient-images-dc98c2b7848a
+- https://www.geeksforgeeks.org/how-to-place-two-bootstrap-cards-next-to-each-other/
 
 ## Links
 
