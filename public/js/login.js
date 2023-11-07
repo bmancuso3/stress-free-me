@@ -24,20 +24,20 @@ const loginForm = async (event) => {
 
 const signupForm = async (event) => {
   event.preventDefault();
-  const nameNew = document.querySelector("#name").value.trim();
-  const emailNew = document.querySelector("#emailNew").value.trim();
-  const passwordNew = document.querySelector("#passwordNew").value.trim();
+  const name = document.querySelector("#name").value.trim();
+  const email = document.querySelector("#emailNew").value.trim();
+  const password = document.querySelector("#passwordNew").value.trim();
 
-  if (nameNew && emailNew && passwordNew) {
-    const response = await fetch("api/users", {
+  if (name && email && password) {
+    const response = await fetch("/api/users", {
       method: "POST",
-      body: JSON.stringify({ nameNew, emailNew, passwordNew }),
+      body: JSON.stringify({ name, email, password }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
       alert("Created login successful!");
-      document.location.replace("/surveys"); //needs to go to profile
+      document.location.replace("/api/surveys"); //needs to go to profile
     } else {
       alert("Invalid login, please input needed criteria for creating login!");
     }
