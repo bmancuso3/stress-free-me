@@ -4,10 +4,10 @@ const loginForm = async (event) => {
   //Grabbing the values from our homepage.handlebars
   const email = document.querySelector("#emailInput").value.trim();
   const password = document.querySelector("#passwordInput").value.trim();
-  console.log(email,password)
+  console.log(email, password);
   //If email and password match then we make an update using a POST HTTP request, that speaks directly to the userRoutes.js to fetch the POST route for 'login'.
   // API folder to index.js '/users', and then to 'login' post in userRoutes.js
-  if (email && password ) {
+  if (email && password) {
     const response = await fetch("api/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
@@ -24,29 +24,26 @@ const loginForm = async (event) => {
 
 const signupForm = async (event) => {
   event.preventDefault();
-  const emailNew = document.querySelector("#emailNew").value.trim();
-  const passwordNew = document.querySelector("#passwordNew").value.trim();
+  const name = document.querySelector("#name").value.trim();
+  const email = document.querySelector("#emailNew").value.trim();
+  const password = document.querySelector("#passwordNew").value.trim();
 
-  if (emailNew && passwordNew) {
-    const response = await fetch("api/users", {
+  if (name && email && password) {
+    const response = await fetch("/api/users", {
       method: "POST",
-      body: JSON.stringify({ emailNew, passwordNew }),
+      body: JSON.stringify({ name, email, password }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
       alert("Created login successful!");
-      document.location.replace("/surveys"); //needs to go to profile
+      document.location.replace("/api/surveys"); //needs to go to profile
     } else {
       alert("Invalid login, please input needed criteria for creating login!");
     }
   }
 };
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginForm);
+document.querySelector(".login-form").addEventListener("submit", loginForm);
 
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupForm);
+document.querySelector(".signup-form").addEventListener("submit", signupForm);
