@@ -11,7 +11,7 @@ submitButton.addEventListener('click', async () => {
     const data = {
       rating: rating
     };
-
+console.log(data)
     try {
       // Make the fetch POST request
       const response = await fetch('/api/surveys', { 
@@ -30,6 +30,6 @@ submitButton.addEventListener('click', async () => {
       console.error(error);
     }
   }
-  document.location.replace("/"); //goes to homepage OR once profile is set. This will go to profile.
+  document.location.replace("/api/results"); //goes to result page.
 });
 
