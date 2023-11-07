@@ -2,8 +2,8 @@ const loginForm = async (event) => {
   event.preventDefault();
 
   //Grabbing the values from our homepage.handlebars
-  const email = document.querySelector("emailInput").value.trim();
-  const password = document.querySelector("passwordInput").value.trim();
+  const email = document.querySelector("#emailInput").value.trim();
+  const password = document.querySelector("#passwordInput").value.trim();
 
   //If email and password match then we make an update using a POST HTTP request, that speaks directly to the userRoutes.js to fetch the POST route for 'login'.
   // API folder to index.js '/users', and then to 'login' post in userRoutes.js
@@ -24,8 +24,8 @@ const loginForm = async (event) => {
 
 const signupForm = async (event) => {
   event.preventDefault();
-  const emailNew = document.querySelector("emailNew").value.trim();
-  const passwordNew = document.querySelector("passwordNew").value.trim();
+  const emailNew = document.querySelector("#emailNew").value.trim();
+  const passwordNew = document.querySelector("#passwordNew").value.trim();
 
   if (emailNew && passwordNew === true) {
     const response = await fetch("api/users", {
@@ -36,9 +36,17 @@ const signupForm = async (event) => {
 
     if (response.ok) {
       alert("Created login successful!");
-      document.location.replace("/homepage");
+      document.location.replace("/questions"); //needs to go to profile
     } else {
-      alert("Invalid login, please input needed criteria for craeting login!");
+      alert("Invalid login, please input needed criteria for creating login!");
     }
   }
 };
+
+document
+  .querySelector('.login-form')
+  .addEventListener('submit', loginForm);
+
+document
+  .querySelector('.signup-form')
+  .addEventListener('submit', signupForm);
