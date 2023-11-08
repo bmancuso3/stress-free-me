@@ -50,11 +50,11 @@ router.get("/profile/:id", auth, async (req, res) => {
 // if user is already logged in, redirect to new route
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/profile");
+    res.redirect("/profile/:id");
     return;
   }
 
-  res.render("login");
+  res.render("profile");
 });
 
 router.get("/api/results", async (req, res) => {
