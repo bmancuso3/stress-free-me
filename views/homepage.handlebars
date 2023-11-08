@@ -1,54 +1,117 @@
-<div class="m-5 pb-1 text-center fs-1">How stressed are you?</div>
-<div class="m-5 pb-5 text-center fs-1">Login to find out!</div>
+<div class="d-flex justify-content-center p-5">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/5361/5361723.png"
+    class=""
+    id="logoImage"
+  />
 
-<div class="container p-3 d-flex justify-content-center">
-  <div
-    class="card row row-cols-2 row-cols-lg-5 g-2 g-lg-3"
-    style="width: 50rem"
-  >
-    <form class="card-body col login-form">
-      <div class="mb-3">
-        <h2>Login</h2>
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="emailInput"
-          aria-describedby="emailHelp"
-        />
-
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="passwordInput" />
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
 </div>
-<div class="container p-3 d-flex justify-content-center">
-  <div
-    class="card row row-cols-2 row-cols-lg-5 g-2 g-lg-3"
-    style="width: 50rem"
-  >
-    <form class="card-body col signup-form">
-      <div class="mb-3">
-        <h2>Signup</h2>
-        <label for="exampleInputEmail1" class="form-label">New Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="emailNew"
-          aria-describedby="emailHelp"
-        />
+<div class="m-5 pb-1 text-center fs-1 font-weight-bold text-light">Welcome to
+  Stress-Free-Me!</div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 mb-4 container p-3 d-flex justify-content-center">
+      <div class="card shadow" style="width: 50rem">
+        <form class="card-body col login-form text-center">
+          <div class="mb-3">
+            <h2>Login</h2>
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <div class="col-sm">
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordInput"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="passwordNew" />
+    </div>
+    {{! <div class="container p-3 d-flex justify-content-center">
+    <div class="card shadow" style="width: 50rem">
+      <form class="card-body col signup-form text-center">
+        <div class="mb-3">
+          <h2>Signup</h2>
+          <label for="exampleInputEmail1" class="form-label">New Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailNew"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+          />
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="passwordNew"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div> }}
+
+    <div class="col-lg-6 mb-4 container p-3 d-flex justify-content-center">
+      <div class="card shadow" style="width: 50rem">
+        <form class="card-body col signup-form text-center">
+          <div class="mb-3">
+            <h2>Signup</h2>
+
+            <label for="usernameInput" class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+              placeholder="Username"
+            />
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailNew"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordNew"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
   </div>
 </div>
 
