@@ -2,61 +2,51 @@
 
 ## Description
 
-Add description here
-
-Group 1 Project 2 - UTA Full Stack Web Dev Bootcamp
-
-## Table of Contents
-
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [Development Goals](#development-goals)
-- [Contributors](#contributors)
-- [Technologies Used](#technologies-used)
-- [References](#references)
-- [Links](#links)
-- [Preview](#preview)
-- [License](#license)
+Stress-Free-Me is an innovative web application designed to guide users through a series of targeted inquiries, facilitating a comprehensive assessment of individual stress levels. Through intuitive charts, users can effortlessly visualize their recent survey results alongside their historical stress data, enabling a nuanced understanding of their stress patterns over time.
 
 ## User Story
 
 ```
-Story Here
+If you have experienced periods of academic pressure and are interested in discerning the key factors contributing to your stress levels, we invite you to participate in this brief survey. Your responses will help you gain insights into the primary influencers of your current state of stress.
 ```
 
-## Acceptance Criteria
+## Table of Contents
 
-```
-Criteria Here
-```
+- [User Story](#user-story)
+- [Usage](#Usage)
+- [Credits/Contributors](#Credits/Contributors)
+- [Technologies Used](#technologies-used)
+- [References](#references)
+- [Links](#links)
+- [License](#license)
 
-## Development Goals
 
-1.
 
-## Contributors
+## Usage
 
-- Andrew Bakhaya
-- Matthew Casey
-- Diego Cornejo
-- Kai Gurung-Doll
-- Robert Mancuso
+
+![Home Page](assets/images/login.1.png)
+![Login Page](assets/images/login.2.png)
+![Start Survey Page](assets/images/survey.1.png)
+![Submit Survey Page](assets/images/survey.2.png)
+
+
+## Credits/Contributors
+
+- Andrew Bakhaya - <a href="https://github.com/AndyBakhaya">Github</a>
+- Matthew Casey - <a href="https://github.com/MAT-2">Github</a>
+- Diego Cornejo - <a href="https://github.com/CornejoD">Github</a>
+- Kai Gurung-Doll - <a href="https://github.com/KaiDoll">Github</a>
+- Robert Mancuso - <a href="https://github.com/bmancuso3">Github</a>
 
 ## Technologies Used
 
 - JavaScript
 - Node.js
+- Chart.js
 - HTML
 - Bootstrap CSS
-
-## Installations
-
-- Chart.JS v.4.4.0: https://www.chartjs.org/docs/latest/getting-started/installation.html
-- DOTENV v.8.2.0: https://www.npmjs.com/package/dotenv
-- Express.JS v.4.17.1: https://expressjs.com/en/starter/installing.html
-- Handlebars.JS v.5.2.0: https://handlebarsjs.com/installation/
-- MYSQL2 v.2.2.5: https://www.npmjs.com/package/mysql2
-- Sequelize v.6.3.5: https://sequelize.org/docs/v6/getting-started/
+- Handlebars
 
 ## References
 
@@ -71,6 +61,12 @@ Criteria Here
 - https://www.w3schools.com/css/css_background.asp
 - https://bootcamp.uxdesign.cc/use-css-gradients-for-background-gradient-images-dc98c2b7848a
 - https://www.geeksforgeeks.org/how-to-place-two-bootstrap-cards-next-to-each-other/
+- Chart.JS v.4.4.0: https://www.chartjs.org/docs/latest/getting-started/installation.html
+- DOTENV v.8.2.0: https://www.npmjs.com/package/dotenv
+- Express.JS v.4.17.1: https://expressjs.com/en/starter/installing.html
+- Handlebars.JS v.5.2.0: https://handlebarsjs.com/installation/
+- MYSQL2 v.2.2.5: https://www.npmjs.com/package/mysql2
+- Sequelize v.6.3.5: https://sequelize.org/docs/v6/getting-started/
 
 ## Links
 
@@ -78,11 +74,6 @@ Criteria Here
 
 ### <a href="https://bmancuso3.github.io/stress-free-me">Live Site</a>
 
-## Preview
-
-<img src='./images/functionality_preview.png' alt='EX1'/> - Login / Sign Up
-<img src='./images/functionality_preview.png' alt='EX2'/> - Profile Page
-<img src='./images/functionality_preview.png' alt='EX3'/> - Survey Page
 
 ## License
 
