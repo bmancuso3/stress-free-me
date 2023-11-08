@@ -1,12 +1,59 @@
 <div>
-    <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
-    <div>Survey Score Chart should appear here</div>
-    <div style="width: 800px;"><canvas id="survey-score"></canvas></div>
 
-    <div>Survey Doughnut should appear here</div>
-        <div style="width: 800px;"><canvas id="survey-doughnut"></canvas></div>
+    {{!-- <div>Survey Doughnut should appear here</div> --}}
+    <div style="width: 500px;"><canvas id="survey-doughnut"></canvas></div>
 
-
-    <!-- <script type="module" src="dimensions.js"></script> -->
-    <script type="module" src="../charts/survey-score.js"></script>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+(async function() {
+  const data = {
+    labels: [
+      'headaches',
+      'workload',
+      'stress',
+      'sleep',
+      'performance',
+      'hobbies',
+      'therapy',
+      'outdoors'
+    ],
+    datasets: [{
+      label: 'Stress Factors by Type',
+      data: [
+      {{this.headaches}}, 
+      {{this.workload}}, 
+      {{this.stress}}, 
+      {{this.sleep_quality}}, 
+      {{this.performance}}, 
+      {{this.hobbies}}, 
+      {{this.therapy}}, 
+      {{this.outside}}],
+
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(255, 99, 132)',
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(54, 162, 235)',
+        'rgb(54, 162, 235)',
+        'rgb(54, 162, 235)',
+        'rgb(54, 162, 235)',
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+  new Chart(
+    document.getElementById('survey-doughnut'),
+    {
+      type: 'doughnut',
+      data: data,
+    }
+  );
+})();
+
+    </script>  
+
