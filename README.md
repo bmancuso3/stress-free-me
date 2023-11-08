@@ -27,6 +27,8 @@ If you have experienced periods of academic pressure and are interested in disce
 
 ![Home Page](assets/images/login.1.png)
 ![Login Page](assets/images/login.2.png)
+![Profile Page Top](assets/images/profile.1.png)
+![Profile Page Bottom](assets/images/profile.2.png)
 ![Start Survey Page](assets/images/survey.1.png)
 ![Submit Survey Page](assets/images/survey.2.png)
 
