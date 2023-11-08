@@ -1,5 +1,6 @@
 const submitButton = document.querySelector('.btn-primary');
 
+
 submitButton.addEventListener('click', async () => {
   const radioButtons = document.querySelectorAll('input[name="exampleForm"]:checked');
 const data = {
@@ -31,6 +32,7 @@ const data = {
     // Handle any errors
     console.error(error);
   }
-  document.location.replace("/api/profile/:id"); //goes to homepage OR once profile is set. This will go to profile.
+  document.location.replace("/profile/:id"); //goes to homepage OR once profile is set. This will go to profile.
 });
+
 
