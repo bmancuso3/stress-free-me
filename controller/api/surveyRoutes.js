@@ -15,4 +15,16 @@ router.post('/', withAuth, async (req, res)=>{
     }
 })
 
+////Calls for data from surveys
+// router.get('/:UserId', withAuth, async (req,res) =>{
+//     try{
+//         const surveys = Survey.findAll({where:{user_id: req.params.UserId}});
+
+//         res.json(surveys);
+//     }catch(err){
+//         console.log(err);
+//         res.json(err)
+//     }
+// })
+
 module.exports = router;
