@@ -74,7 +74,7 @@ If you have experienced periods of academic pressure and are interested in disce
 
 ### <a href="https://github.com/bmancuso3/stress-free-me">GitHub Repository</a>
 
-### <a href="https://bmancuso3.github.io/stress-free-me">Live Site</a>
+### <a href="https://projecttwofromgroupone-f2f987471d78.herokuapp.com/">Live Site</a>
 
 
 ## License
